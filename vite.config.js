@@ -1,11 +1,8 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-
+// vite.config.js
 export default defineConfig({
-  plugins: [react()],
-  base: '/meow-call/', // MUST match your repo name
+  base: '/meow-call/', // Must EXACTLY match your repo name
   build: {
     outDir: 'dist',
-    emptyOutDir: true,
+    assetsDir: 'assets'
   }
 })
